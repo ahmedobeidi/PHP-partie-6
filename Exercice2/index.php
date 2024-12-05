@@ -6,6 +6,13 @@
     <title>Exercice 1</title>
 </head>
 <body>
-    
+    <?php 
+        if (isset($_GET['age'])) {
+            echo "age is {$_GET['age']}";
+        }
+        else {
+            echo "Enter an age";
+        }
+    ?>
 </body>
 </html>
