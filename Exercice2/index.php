@@ -6,13 +6,6 @@
     <title>Exercice 1</title>
 </head>
 <body>
-    <?php 
-       if (!isset($_GET['lastname'], $_GET['firstname'])) {
-            echo "Are not exist";
-       }
-       else {
-            echo "Are exist";
-       }
-    ?>
+    
 </body>
 </html>
