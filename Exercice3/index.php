@@ -1,3 +1,10 @@
+<?php 
+    if (isset($_GET['startDate'], $_GET['endDate'])) {
+        $startDate = $_GET['startDate'];
+        $endDate = $_GET['endDate'];
+    }   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +13,15 @@
     <title>Exercice 3</title>
 </head>
 <body>
-    <?php
-        if(isset($_GET['startDate'], $_GET['endDate'])) {
-            echo "startDate = {$_GET['startDate']},  startDate = {$_GET['startDate']}";
-        }
-    ?>
+    <p>
+        <?php
+            if(isset($_GET['startDate'], $_GET['endDate'])) {
+                echo "startDate = {$_GET['startDate']},  startDate = {$_GET['startDate']}";
+            }
+            else {
+                echo "StartDate and endDate are not exists";
+            }
+        ?>
+    </p>
 </body>
 </html>
