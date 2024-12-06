@@ -11,7 +11,7 @@
             echo "Are not exist";
        }
        else {
-            echo "Are exist";
+            echo $_GET['lastname'], $_GET['firstname'];
        }
     ?>
 </body>
