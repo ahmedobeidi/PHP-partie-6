@@ -1,5 +1,10 @@
 <?php 
-    if (isset($_GET['startDate'], $_GET['endDate'])) {
+    if (
+        isset(
+            $_GET['startDate'], 
+            $_GET['endDate']
+        )
+    ) {
         $startDate = $_GET['startDate'];
         $endDate = $_GET['endDate'];
     }   
